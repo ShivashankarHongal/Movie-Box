@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/95337dbfa0.js"
+      crossorigin="anonymous"
+    ></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+    <title>Moviebox Hompage</title>
+
+  </head>
+  <body class="ff-dm-Sans">
+    <nav class="container-fluid fixed-top pt-2 d-flex justify-content-center bg-secondary bg-opacity-50">
+      <div class="container row ">
+        <div class="col-md-4 pb-2 p-0">
+          <a class="d-flex text-decoration-none" href="index.html">
+            <img
+              class="img-fluid"
+              src="Image/svg/moviebox-logo.svg"
+              alt="moviebox logo"
+            />
+            <h3 class="fs-6 align-self-center text-light ps-2">MovieBox</h3>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-12 pb-2 p-0">
+          <form
+            class="d-flex rounded mt-1"
+            role="search"
+            id="form"
+            name="search-form"
+          >
+            <input
+              class=" bg-transparent p-2 pe-5 search-bar text-light fs-6"
+              type="search"
+              placeholder="Seach..."
+              aria-label="Search"
+            />
+            <button class="btn ps-5 text-light search-btn" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <div class="col-md-4 d-flex p-0 justify-content-end pb-2 pt-1 ">
+          <a href="#" class="text-decoration-none align-self-center text-decoration-none text-light pe-2">Sign In</a>
+          <button
+            class="rounded-circle bg-danger border-0 py-2 px-3"
+            type="button"
+          >
+          <a href="movie.html">
+            <i class="fa-solid fa-bars fs-5 text-light"></i>
+          </a>
+            
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid poster text-light">
+        <div class="container col-sm-7 offset-sm-1">
+           <h1 class="display-4 fw-bold" id="main-poster">John Wick 3 : <br> Parabellum</h1>
+      <div class="container col-sm-5 offset-sm-0  p-0 d-flex">
+        <div class="imdb-fs-10 col-sm-7 ">
+
+            <img src="Image/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-2">
+            <small class="fs-10">86.0/100</small>
+        </div>
+
+        
+        <div class="rotten-tomato-fs-10 col-sm-5  ps-3">
+            <img src="Image/svg/rotten-tomatoes-icon.svg" alt="rotten tomatoes icon" class="img-fluid pe-1">
+            <small class="fs-10">97%</small>
+        </div>
+      </div>
+      <p class="fs-6 pt-2 col-sm-8"><small id="main-poster-overview">John Wick is on the run after killing a member <br />
+        of the international assassins' guild, and with <br />
+        a $14 million price tag on his head, he is the <br />
+        target of hit men and women everywhere.
+      </p></small>
+        <a href="https://www.youtube.com/watch?v=M7XM597XO94" target="_blank">
+          <button class="btn bg-danger text-light">
+        <i class="fa-solid fa-circle-play"></i>
+        WATCH TRAILER
+      </button>   
+        </a>
+      
+        </div>
+      
+    </div>
+    <div class="container d-flex justify-content-between mt-5 mb-5">
+        <h2 class="fs-4">Featured Movie</h2>
+        <h4 class="fs-6 text-danger">See more ></h4>
+    </div>
+    <div class="row container  my-0 mx-auto p-0">
+        <div class="col-sm-3 px-3 pb-5">
+            <div class="position-relative border">
+                <div class="position-absolute top-0 start-0  rounded-pill bg-secondary mt-2 ms-2 py-1 px-2 bg-opacity-50">
+                    <span class="fs-10 text-dark fw-bold">TV SERIES</span>
+                </div>
+                <div class="position-absolute top-0 end-0  rounded-circle  bg-secondary bg-opacity-50 mt-2 me-2 px-2 py-1">
+                    <i class="fa-solid fa-heart text-light"></i>
+                </div>
+            </div>
+            <img src="Image/svg/stranger-things-poster.svg" alt="stranger things poster" 
+            id="st-poster"
+            class="img-fluid poster-img">
+            <p class="fs-10 pt-2 mb-1 fw-bold  light-gray" id="st-production-country">USA, 2016 - Current</p>
+            <h6 class="pt-1 fs-14 fw-bold" id="st-movie-title">Stranger Things</h6>
+            <div class="container  p-0 d-flex justify-content-between pt-1">
+                <div class=" d-flex">
+                    <img src="Image/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
+                    <small class="fs-10">86.0/100</small>
+                </div>
+                <div class=" d-flex ">
+                    <img src="Image/svg/rotten-tomatoes-icon.svg" alt="rotten tomatoes icon" class="img-fluid pe-1">
+                    <small class="fs-10">97%</small>
+                </div>
+            </div>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="st-genre">Action, Adventure, Horror</p>
+            
+        </div> 
+        <div class="col-sm-3 px-3 pb-5 ">
+            <div class="position-relative border">
+                <div class="position-absolute top-0 end-0  rounded-circle  dark-gray mt-2 me-2 px-2 py-1">
+                    <i class="fa-solid fa-heart text-light"></i>
+                </div>
+            </div>
+            <img src="Image/svg/batman-begins.svg" 
+            alt="batman begins poster" class="img-fluid poster-img" id="batman-poster">
+            <p class="fs-10 pt-2 mb-1 fw-bold light-gray" id="batman-production-country">USA, 2005</p>
+            <h6 class="pt-1 fs-14 fw-bold" id="batman-movie-title">Batman Begins</h6>
+            <div class="container  p-0 d-flex justify-content-between pt-1">
+                <div class=" d-flex">
+                    <img src="Image/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
+                    <small class="fs-10">82.0 / 100</small>
+                </div>
+                <div class=" d-flex ">
+                    <img src="Image/svg/rotten-tomatoes-icon.svg" alt="rotten tomatoes icon" class="img-fluid pe-1">
+                    <small class="fs-10">70%</small>
+                </div>
+            </div>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="batman-genre">Action, Adventure</p>
+            
+        </div> 
+        </a>
+         <div class="col-sm-3 px-3 pb-5 ">
+            <div class="position-relative border">
+                <div class="position-absolute top-0 end-0  rounded-circle  dark-gray mt-2 me-2 px-2 py-1">
+                    <i class="fa-solid fa-heart text-light"></i>
+                </div>
+            </div>
+            <img src="Image/svg/spiderman-into-the-spiderverse.svg" alt="Spider-Man : Into The Spider Verse poster" class="img-fluid poster-img"
+            id="spiderman-poster">
+            <p class="fs-10 pt-2 mb-1 fw-bold  light-gray"
+            id="spiderman-production-country">USA, 2018</p>
+            <h6 class="pt-1 fs-14 fw-bold" id="spiderman-movie-title">Spider-Man : Into The Spider Verse</h6>
+            <div class="container  p-0 d-flex justify-content-between pt-1">
+                <div class=" d-flex">
+                    <img src="Image/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
+                    <small class="fs-10">84.0/100</small>
+                </div>
+                <div class=" d-flex ">
+                    <img src="Image/svg/rotten-tomatoes-icon.svg" alt="rotten tomatoes icon" class="img-fluid pe-1">
+                    <small class="fs-10">87%</small>
+                </div>
+            </div>
+            <p class="fs-10 pt-2 fw-bold light-gray text-break" id="spiderman-genre">Animation, Action, Adventure</p>
+            
+        </div>
+         <div class="col-sm-3 px-3 pb-5 ">
+            <div class="position-relative border">
+                <div class="position-absolute top-0 end-0  rounded-circle  dark-gray mt-2 me-2 px-2 py-1">
+                    <i class="fa-solid fa-heart text-light"></i>
+                </div>
+            </div>
+            <img src="Image/svg/dunkirk.svg" alt="Dunkirk poster" class="img-fluid poster-img"
+            id="dunkirk-poster">
+            <p class="fs-10 pt-2 mb-1 fw-bold  light-gray" id="dunkirk-production-country">USA, 2017</p>
+            <h6 class="pt-1 fs-14 fw-bold" id="dunkirk-movie-title">Dunkirk</h6>
+            <div class="container  p-0 d-flex justify-content-between pt-1">
+                <div class=" d-flex">
+                    <img src="Image/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
+                    <small class="fs-10">78.0/100</small>
+                </div>
+                <div class=" d-flex ">
+                    <img src="Image/svg/rotten-tomatoes-icon.svg" alt="rotten tomatoes icon" class="img-fluid pe-1">
+                    <small class="fs-10">94%</small>
+                </div>
+            </div>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="dunkirk-genre">Action, Drama, History</p>
+            
+        </div>
+         <div class="col-sm-3 px-3 pb-5 ">
+            <div class="position-relative border">
+                <div class="position-absolute top-0 end-0  rounded-circle  dark-gray mt-2 me-2 px-2 py-1">
+                    <i class="fa-solid fa-heart text-light"></i>
+                </div>
+            </div>
+            <img src="Image/svg/dune-poster.svg" alt="Dune poster" class="img-fluid poster-img"
+            id="dune-poster">
+            <p class="fs-10 pt-2 mb-1 fw-bold  light-gray" id="dune-production-country">USA, 2021</p>
+            <h6 class="pt-1 fs-14 fw-bold" id="dune-movie-title">Dune</h6>
+            <div class="container  p-0 d-flex justify-content-between pt-1">
+                <div class=" d-flex">
+                    <img src="Image/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
+                    <small class="fs-10">84.0/100</small>
+                </div>
+                <div class=" d-flex ">
+                    <img src="Image/svg/rotten-tomatoes-icon.svg" alt="rotten tomatoes icon" class="img-fluid pe-1">
+                    <small class="fs-10">75%</small>
+                </div>
+            </div>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="dune-genre">Action, Adventure, Drama</p>
+            
+        </div>
+         <div class="col-sm-3 px-3 pb-5 ">
+            <div class="position-relative border">
+                <div class="position-absolute top-0 end-0  rounded-circle  bg-secondary bg-opacity-50 mt-2 me-2 px-2 py-1">
+                    <i class="fa-solid fa-heart text-light"></i>
+                </div>
+            </div>
+            <img src="Image/svg/no-time-to-die-poster.svg" alt="No Time To Die poster" class="img-fluid poster-img"
+            id="no-time-poster">
+            <p class="fs-10 pt-2 mb-1 fw-bold  light-gray"
+            id="no-time-production-country">USA, 2021</p>
+            <h6 class="pt-1 fs-14 fw-bold" id="no-time-movie-title">No Time To Die</h6>
+            <div class="container  p-0 d-flex justify-content-between pt-1">
+                <div class=" d-flex">
+                    <img src="Image/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
+                    <small class="fs-10">76.0/100</small>
+                </div>
+                <div class=" d-flex ">
+                    <img src="Image/svg/rotten-tomatoes-icon.svg" alt="rotten tomatoes icon" class="img-fluid pe-1">
+                    <small class="fs-10">68%</small>
+                </div>
+            </div>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="no-time-genre">Action, Adventure, Thriller</p>
+            
+        </div>
+         <div class="col-sm-3 px-3 pb-5 ">
+            <div class="position-relative border">
+                <div class="position-absolute top-0 end-0  rounded-circle  dark-gray mt-2 me-2 px-2 py-1">
+                    <i class="fa-solid fa-heart text-light"></i>
+                </div>
+            </div>
+            <img src="Image/svg/shang-chi.svg" alt="Shang-Chi and the Legend of the Ten Rings poster" class="img-fluid poster-img"
+            id="shang-chi-poster">
+            <p class="fs-10 pt-2 mb-1 fw-bold  light-gray"
+            id="shang-chi-production-country">USA, 2021</p>
+            <h6 class="pt-1 fs-14 fw-bold" id="shang-chi-movie-title">Shang-Chi and the Legend of the Ten Rings</h6>
+            <div class="container  p-0 d-flex justify-content-between pt-1">
+                <div class=" d-flex">
+                    <img src="Image/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
+                    <small class="fs-10">79.0/100</small>
+                </div>
+                <div class=" d-flex ">
+                    <img src="Image/svg/rotten-tomatoes-icon.svg" alt="rotten tomatoes icon" class="img-fluid pe-1">
+                    <small class="fs-10">71%</small>
+                </div>
+            </div>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="shang-chi-genre">Action, Adventure, Fantasy</p>
+            
+        </div>
+         <div class="col-sm-3 px-3 pb-5 ">
+            <div class="position-relative border">
+                <div class="position-absolute top-0 end-0  rounded-circle  dark-gray mt-2 me-2 px-2 py-1">
+                    <i class="fa-solid fa-heart text-light"></i>
+                </div>
+            </div>
+            <img src="Image/svg/dont-breathe-2-poster.svg" alt="Don't Breathe 2 poster" class="img-fluid poster-img"
+            id="dont-breathe-poster">
+            <p class="fs-10 pt-2 mb-1 fw-bold  light-gray"
+            id="dont-breathe-production-country">USA, 2021</p>
+            <h6 class="pt-1 fs-14 fw-bold" id="dont-breathe-movie-title">Don't Breathe 2</h6>
+            <div class="container  p-0 d-flex justify-content-between pt-1">
+                <div class=" d-flex">
+                    <img src="Image/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
+                    <small class="fs-10">61.0/100</small>
+                </div>
+                <div class=" d-flex ">
+                    <img src="Image/svg/rotten-tomatoes-icon.svg" alt="rotten tomatoes icon" class="img-fluid pe-1">
+                    <small class="fs-10">46%</small>
+                </div>
+            </div>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="dont-breathe-genre">Action, Drama, Horror </p>   
+        </div>
+</html>
+
