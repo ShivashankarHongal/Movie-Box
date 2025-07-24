@@ -21,4 +21,4 @@ MovieBox is a web application designed to showcase movies and provide users with
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/moviebox.git
+   
